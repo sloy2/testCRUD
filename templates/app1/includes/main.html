@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    
+</head>
+<body>
+    {%for i in data%}
+    <div class="user_counter">Пользователь {{forloop.counter}}</div>
+    <div class="user_info">
+    <span class="username"> Никнейм: {{i.username}}  </span>
+    <span class="email"> Почта: {{i.email}}  </span>
+    <span class="number"> Телефон: {{i.number}}  </span>
+    </div>
+    <br>
+    {%endfor%}
+
+</body>
+</html>
